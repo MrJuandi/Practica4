@@ -47,7 +47,7 @@ public class UserController {
         return ResponseEntity.notFound().build();
     }
 
-    // Actualizar un usuario (PUT)
+    //Actualizar un usuario (PUT)
     @PutMapping("/{id}")
     public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User newUser) {
         for (User user : users) {
